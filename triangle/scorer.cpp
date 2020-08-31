@@ -23,7 +23,7 @@ int main(int argc, char* argv[]) {
   ifstream tc_in(argv[1]);
   ifstream tc_out(argv[2]);
 
-  while (getline(cin,con_ans) > 0) {
+  while (getline(cin,con_ans)) {
     if (++con_triangle > NUM_TRIANGLE) return wa();
     if (con_ans.length() != 3) return wa();
     
